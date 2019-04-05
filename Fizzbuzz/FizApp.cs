@@ -14,7 +14,6 @@ namespace Fizzbuzz
         {
 
           
-            Console.WriteLine(num.ToString());
             List<string> result = new List<string>();
 
             try
