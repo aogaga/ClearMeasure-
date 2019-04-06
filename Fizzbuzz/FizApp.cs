@@ -21,11 +21,13 @@ namespace Fizzbuzz
                 for (int i = 1; i <= num; i++)
                 {
                     var itemNotAddedToList = true;
+                    string totalOutput = null;
                     foreach (var x in intputValues)
                     {
                         if (i % x.Value == 0)
                         {
-                            result.Add(x.Word);
+                          
+                            totalOutput = $"{totalOutput} {x.Word}";
 
                             itemNotAddedToList = false;
                         }
@@ -33,12 +35,7 @@ namespace Fizzbuzz
 
                     }
 
-                    if (itemNotAddedToList == true)
-                    {
-                        result.Add(i.ToString());
-
-                    }
-
+                    result.Add(itemNotAddedToList ? i.ToString() : totalOutput);
                 }
             }
             catch (Exception e)

@@ -19,7 +19,7 @@ namespace App
             };
 
             var fizapp = new FizApp();
-            List<string> result = fizapp.GetFizzBuzz(int.MaxValue, list);
+            List<string> result = fizapp.GetFizzBuzz(100, list);
    
 
             foreach (var x in result)

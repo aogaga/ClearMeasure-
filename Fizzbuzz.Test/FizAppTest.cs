@@ -31,7 +31,7 @@ namespace Fizzbuzz.Test
 
             var result = fizApp.GetFizzBuzz(5, appValues).ToArray();
 
-            Assert.AreEqual("Fizz", result[2]);
+            Assert.AreEqual("Fizz", result[2].Trim());
 
         }
 
@@ -43,7 +43,7 @@ namespace Fizzbuzz.Test
 
             var result = fizApp.GetFizzBuzz(5, appValues).ToArray();
 
-           Assert.AreEqual("Buzz", result[4]);
+           Assert.AreEqual("Buzz", result[4].Trim());
 
         }
 
